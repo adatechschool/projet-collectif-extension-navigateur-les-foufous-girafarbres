@@ -1,0 +1,12 @@
+{
+    "manifest_version": 3,
+    "name": "Arbre d'onglets",
+    "version": "0.1",
+    "description": "Affiche un arbre en fonction du nombre d'onglets sur l'ordinateur.",
+    "action": {
+      "default_popup": "popup.html"
+    },
+    "permissions": [
+      "tabs"
+    ]
+}
