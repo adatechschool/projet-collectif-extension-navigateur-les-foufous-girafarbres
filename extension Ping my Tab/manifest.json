@@ -8,8 +8,13 @@
 
 "action": {
     "default_popup": "popup.html",
-    "default_icon": "icons/green16.png"
-}, 
+    "default_icon": "icons/greenlight.png"
+},
+
+"icons": {
+    "48": "icons/extension.png"
+  },
+
 
 "background": {
     "service_worker": "service_worker.js"

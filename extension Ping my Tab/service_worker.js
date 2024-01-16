@@ -6,11 +6,11 @@ function updateIcon() {
     var iconPath;
     // set icon's color depending on number of tabs
     if (tabCount < 6) {
-      iconPath = 'icons/green16.png';
+      iconPath = 'icons/greenlight.png';
     } else if (tabCount < 12) {
-      iconPath = 'icons/orange16.png';
+      iconPath = 'icons/orangelight.png';
     } else {
-      iconPath = 'icons/red16.png';
+      iconPath = 'icons/redlight.png';
     }
     // set icon's image path
     chrome.action.setIcon({ path: iconPath });
