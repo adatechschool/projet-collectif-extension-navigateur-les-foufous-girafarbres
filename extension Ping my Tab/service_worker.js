@@ -1,5 +1,5 @@
 // update extension's icon color
-function updateIcon() {
+ function updateIcon() {
   // count tabs
   chrome.tabs.query({}, function (tabs) {
     var tabCount = tabs.length;
@@ -8,17 +8,17 @@ function updateIcon() {
     var iconTitle;
     var iconMessage;
     // set icon's color depending on number of tabs
-    if (tabCount < 6) {
-      iconPath = 'icons/greenlight.png';
-      iconUrl = 'icons/icons8-sun-32.png';
-      iconTitle = 'Tabs alert'
-      iconMessage = 'Good job'
-    } else if (tabCount < 12) {
+   switch (true) {
+    case tabCount < 6 : 
+      iconPath = 'icons/greenlight.png';      
+      break;
+      case tabCount === 6 :
       iconPath = 'icons/orangelight.png';
       iconUrl = 'icons/icons8-cloud-32.png';
       iconTitle = 'Tabs alert';
       iconMessage = 'Slow down';
-    } else {
+      break; 
+      case tabCount > 11 : 
       iconPath = 'icons/redlight.png';
       iconUrl = 'icons/icons8-storm-32.png';
       iconTitle = 'Tabs alert';
