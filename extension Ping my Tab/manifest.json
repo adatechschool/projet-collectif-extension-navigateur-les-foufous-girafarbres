@@ -1,9 +1,10 @@
 {"manifest_version": 3,
 "name": "Ping my tab",
-"description": "Changes your extension's icon color according to your number of tabs.", 
+"description": "Sends alerts based on your number of tabs.", 
 "version": "0.1",
 "permissions": [
-    "tabs"
+    "tabs",
+    "notifications"
 ],
 
 "action": {
